@@ -1,7 +1,7 @@
 import React, { useContext} from 'react';
 import { PokemonContext } from '../context/PokemonContext';
 
-export const FilterBar = () => {
+export const Filter = () => {
 
 	const { handleCheckbox } = useContext(PokemonContext);
 

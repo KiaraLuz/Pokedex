@@ -3,7 +3,7 @@ import { Link, Outlet, useNavigate } from 'react-router-dom';
 import { PokemonContext } from '../context/PokemonContext';
 import logo from '../assets/pokedex.png'
 
-export const Navigation = () => {
+export const Search = () => {
 	const { onInputChange, valueSearch, onResetForm } =
 		useContext(PokemonContext);
 

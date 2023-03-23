@@ -300,8 +300,6 @@ header form {
 .group-type {
 	display: flex;
 	gap: 10px;
-
-	margin-left: 15px;
 }
 
 .group-type label {
@@ -434,9 +432,9 @@ Styles of Pokemon Single Page
 	font-weight: 700;
 }
 
-/* Loader */
+/* Loading */
 
-.container-loader{
+.container-Loading{
 	display: flex;
 	justify-content: center;
 	margin: 100px 0;
@@ -465,6 +463,12 @@ Styles of Pokemon Single Page
 .btn-load-more:hover{
 	background-color: var(--color-primary-hover);
 	color: #000;
+}
+
+@media screen and (max-width: 1024px) and (min-width: 767px) {
+	.card-list-pokemon {
+		grid-template-columns: repeat(3, 1fr);
+	}
 }
 
 @media screen and (max-width: 768px) and (min-width: 426px){
@@ -496,6 +500,10 @@ Styles of Pokemon Single Page
 		padding: 0px;
 		gap: 20px;
 	}
+
+	.types {
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
 @media screen and (max-width: 425px){
@@ -526,5 +534,9 @@ Styles of Pokemon Single Page
 		align-items: normal;
 		padding: 0px;
 		gap: 20px;
+	}
+
+	.types {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }

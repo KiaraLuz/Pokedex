@@ -1,16 +1,15 @@
 import React, { useContext } from 'react';
 import { PokemonContext } from '../context/PokemonContext';
 import { CardPokemon } from './CardPokemon';
-import { Loader } from './Loader';
+import { Loading } from './Loading';
 
-export const PokemonList = () => {
-	const { allPokemons, loading, filteredPokemons } =
-		useContext(PokemonContext);
+export const Cards = () => {
+	const { allPokemons, loading, filteredPokemons } = useContext(PokemonContext);
 
 	return (
 		<>
 			{loading ? (
-				<Loader />
+				<Loading />
 			) : (
 				<div className='card-list-pokemon container'>
 					{filteredPokemons.length ? (

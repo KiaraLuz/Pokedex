@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { Loader } from '../components/Loader';
+import { Loading } from '../components/Loading';
 import { PokemonContext } from '../context/PokemonContext';
 
 export const PokemonPage = () => {
@@ -24,7 +24,7 @@ export const PokemonPage = () => {
 	return (
 		<main className='container main-pokemon'>
 			{loading ? (
-				<Loader />
+				<Loading />
 			) : (
 				<>
 					<div className='header-main-pokemon'>

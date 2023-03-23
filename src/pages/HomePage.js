@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
-import { FilterBar } from '../components/FilterBar';
-import { PokemonList } from "../components/PokemonList"
+import { Filter } from '../components/Filter';
+import { Cards } from "../components/Cards"
 import { PokemonContext } from '../context/PokemonContext';
 
 export const HomePage = () => {
@@ -34,11 +34,11 @@ export const HomePage = () => {
 						<span>Filtrar</span>
 					</div>
 					<div className={`${showFilter ? 'show' : 'hide'}`}>
-						<FilterBar />
+						<Filter />
 					</div>
 				</div>
 			</div>
-			<PokemonList />
+			<Cards />
 			<div className="container-btn-load-more container">
 					<button className='btn-load-more' onClick={onClickLoadMore}>
 							Cargar más
